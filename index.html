@@ -30,7 +30,7 @@
             justify-content: right;
             padding: 20px;
             overflow: hidden;
-            position: absolute;
+            position: fixed;
             right: 0;
             top: 0;
             transition: all 0.3s;
@@ -49,20 +49,20 @@
             color: #ccc;
         }
         label{
-            position: absolute;
+            position: fixed;
 
         }
         input{
             background-color: #000;
-            position: relative;
+            position: absolute;
             left: 400px;
             display: none;
         }
         input:checked ~ aside{
-            position: absolute;
             right: -500px;
         }
        input:checked ~ label{
+
             right: 0;
             top: 0;
         }
